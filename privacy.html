@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!--Main header info-->
-<title>Privacy policy | QuackStudios</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="images/fav.png">
-<meta name="title" content="QuackStudios | Privacy policy">
-<meta name="description" content="One Pixel At A Time">
-<meta name="image" content="images/fav.png">
-
-<!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuackStudios - Privacy Policy</title>
+    <link rel="icon" href="images/fav.png" type="image/png">
+    <meta name="title" content="QuackStudios | Privacy policy">
+    <meta name="description" content="One Pixel At A Time">
+    <meta name="image" content="images/fav.png">
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFDW7LB80B"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,98 +17,164 @@
 
   gtag('config', 'G-QFDW7LB80B');
 </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: url('images/bg_blur.png') no-repeat center center;
+            background-size: cover;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .header-content {
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #ffd700;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+        
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 2rem;
+            color: #777777;
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+        }
 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Oswald", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            padding: 1rem 0;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
 
-/* Create a Parallax Effect */
-.bgimg-1 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+        nav.hidden {
+            transform: translateY(-100%);
+        }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('images/bg_blur.png');
-  min-height: 100%;
-}
+        .nav-button {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #121212;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
 
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-.transparent-style{
-
-background-color: #ffffff;
-opacity: .4;
-
-}
-</style>
+        .nav-button:hover {
+            background-color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html" class="nav-button">Back to Home</a>
+    </nav>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-bar w3-black w3-container" id="myNavbar">
-  <div class="w3-center w3-text-white w3-large" style="display: flex; justify-content: center;">
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small">HOME</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"> ABOUT US</a>
-    <a href="projects.html" class="w3-bar-item w3-button w3-hide-small"> PROJECTS</a>
-    <a href="http://dsc.quacker.link" target="_blank" class="w3-bar-item w3-button w3-hide-small"> DISCORD</a>
-  </div>
-</div>
+    <header>
+        <div class="header-content">
+            <h1>Privacy Policy</h1>
+        </div>
+    </header>
 
+    <section>
+        <h2>Last Updated: 25/03/2025</h2>
+        <p>QuackStudios ("we," "us," or "our") is committed to protecting the privacy of our users ("you" or "your").
+            This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our website, quacker.link ("Website" or "Site").</p>
+            <p>We reserve the right to update this privacy policy at anytime without prior notice.</p>
+            <p>When using our site you accept our privacy policy no matter what.</p>
+            <p>If you are concerned or have any questions please contact us at support@quackstudios.dev</p>
 
+        <h2>Information We Collect</h2>
+        <p>When interacting with the site we may collect your IP address and/or MAC address
+        <p>When on the site we collect page views, your location, outbound clicks, site search, video engagement, file downloads and form interactions.</p>
+        <p>We also use services provided to us from google, netlify and cloudflare.</p>
 
+        <h2>Safeguarding</h2>
+        <p>Our site is being served to you through HTTPS and Cloudflare protection</p>
+        <p>No data collected is specificly linked to users and is used for general analytics</p>
+    </section>
 
-<!-- Info Section - "Privacy Policy" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h1>Privacy policy</h1>
-      <h3>Last Updated: 17/03/2025</h3>
-      <p>QuackStudios ("we," "us," or "our") is committed to protecting the privacy of our users ("you" or "your").
-        This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our website, quacker.link ("Website" or "Site").
-      </p>
-      <p>We reserve the right to update this privacy policy at anytime without prior notice.</p>
-      <p>When using our site you accept our privacy policy no matter what.</p>
-      <p>If you are concerned or have any questions please contact us at support@quackstudios.dev</p>
+    <footer>
+        <p>&copy; 2025 QuackStudios. All rights reserved.</p>
+        <p><a href="index.html" style="color: #ffd700;">Home</a> | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a></p>
+    </footer>
+    <script>
+        let lastScrollY = window.scrollY;
+        const nav = document.querySelector('nav');
 
-      <h1>Information We Collect</h1>
-      <p>When interacting with the site we may collect your IP address and/or MAC address
-      <p>When on the site we collect page views, your location, outbound clicks, site search, video engagement, file downloads and form interactions.</p>
-      <p>We also use services provided to us from google, netlify and cloudflare.
-
-
-      <h1>Safeguarding</h1>
-      <p>Our site is being served to you through HTTPS and Cloudflare protection</p>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <P>The QuackStudios site | Developed using QuackWeb</P>
-</footer>
- 
-</script>
-
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
 </body>
 </html>
-
-
