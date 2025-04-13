@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuackStudios - Home</title>
+    <link rel="icon" href="images/fav.png" type="image/png">
+    <meta name="title" content="QuackStudios | Home">
+    <meta name="description" content="One Pixel At A Time">
+    <meta name="image" content="images/fav.png">
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"floating right",Theme:"classic",Message:"By using this website you automatically agree to our privacy policy",LinkText:"Read policy",ButtonText:"Got it, thanks!",Location:"https://quackstudios.dev/privacy",Time:"1",})</script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFDW7LB80B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QFDW7LB80B');
+</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: url('images/bg_blur.png') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .logo-container {
+            z-index: 1;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo-container img {
+            width: 200px;
+            height: auto;
+        }
+        
+        .header-content {
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+            font-weight: 500;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            padding: 1rem 0;
+            transition: top 0.3s ease-in-out;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #121212;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+        
+        .btn:hover {
+            background-color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        section {
+            padding: 5rem 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+            font-weight: 700;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: #ffffff;
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+        
+        .about {
+            background-color: #1a1a1a;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-text {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .projects {
+            background-color: #121212;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+        
+        .project-info {
+            padding: 1.5rem;
+        }
+        
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffd700;
+        }
+        
+        .project-info p {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .view-all {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .contact {
+            background: url('images/bg_blur.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .contact-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .contact-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        .section-title h2, .section-title p {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            display: inline-block;
+            margin: 0 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        .social-link img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 2rem;
+            color: #777777;
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+        }
+        
+        .partners {
+            background-color: #1a1a1a;
+        }
+        
+        .partner-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 2rem;
+        }
+        
+        .partner-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .partner-link:hover {
+            transform: translateY(-10px);
+        }
+        
+        .partner-link img {
+            max-width: 200px;
+            height: auto;
+            filter: grayscale(0.5);
+            transition: filter 0.3s ease;
+        }
+        
+        .partner-link:hover img {
+            filter: grayscale(0);
+        }
+        
+
+        
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul li {
+                margin: 0 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+
+    <header id="home">
+        <div class="header-content">
+            <h1>QuackStudios</h1>
+            <p>Indie development studio specializing in Minecraft mods, modpacks, and original game development</p>
+            <div>
+                <a href="#projects" class="btn">Our Projects</a>
+                <a href="https://discord.quackstudios.dev/" class="btn">Join Our Discord</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Us</h2>
+            <p>Passionate developers creating unique gaming experiences</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>QuackStudios is a team of passionate developers dedicated to creating high-quality, free content for players worldwide. Specializing in Minecraft modding and game development, we strive to deliver unique and engaging experiences. Our community and clients are at the heart of everything we do— we actively listen to feedback and continuously improve our projects to bring the best possible content. Ensuring our players and clients are happy is our top priority, and we work hard to exceed expectations with every project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>Check out some of our latest work</p>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/minecraft_title_square.png" alt="More and More Armor">
+                </div>
+                <div class="project-info">
+                    <h3>More and More Armor</h3>
+                    <p>Expand your armor options with this comprehensive armor expansion mod. Discover over a dozen of new armor pieces and sets with unique properties and abilities.</p>
+                    <a href="https://modrinth.com/mod/morearmor" target="_blank" class="btn">Learn more</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/eyes.png" alt="MineMonitor">
+                </div>
+                <div class="project-info">
+                    <h3>MineMonitor</h3>
+                    <p>A poweful discord bot with API hooks, that automatically sends community updates when mods or modpacks are updated. With support for modrinth</p>
+                    <a href="https://monitor.quackstudios.dev/" target="_blank" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/craftergod.png" alt="Crafter God">
+                </div>
+                <div class="project-info">
+                    <h3>Crafter God</h3>
+                    <p>Become a master crafter with this comprehensive crafting overhaul mod that introduces almost 50 uncraftable items, now craftable, while being balanced!</p>
+                    <a href="https://modrinth.com/mod/craftergod" target="_blank" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="projects.html" class="btn">View All Projects</a>
+        </div>
+    </section>
+
+    <section id="partners" class="partners">
+        <div class="section-title">
+            <h2>Our Partners</h2>
+            <p>Trusted collaborators who help make our projects possible</p>
+        </div>
+        <div class="partner-grid">
+            <a href="https://bisecthosting.com/quack" target="_blank" class="partner-link">
+                <img src="images/bisecthosting.png" alt="Bisect Hosting">
+            </a>
+            <a href="https://discord.gg/VztWEHpVh8" target="_blank" class="partner-link">
+                <img src="images/ironhaven.png" alt="Iron Haven">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Connect With Us</h2>
+            <p>Join our community and stay updated on our latest projects</p>
+        </div>
+        <div class="contact-content">
+            <p>We love hearing from our community! Join our Discord server to connect with our team, get support for our mods, or just chat with fellow enthusiasts.</p>
+            <a href="https://discord.quackstudios.dev/" class="btn">Join Our Discord</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 QuackStudios. All rights reserved.</p>
+        <p>Minecraft is a registered trademark of Mojang AB. QuackStudios is not affiliated with Mojang AB.</p>
+        <p>Designed and developed by RoyalQuack</p>
+        <p><a href="https://github.com/RoyalQuack/QuackStudios-website" style="color: #ffd700;">View on GitHub</a> | <a href="https://discord.quackstudios.dev/" style="color: #ffd700;">Join Our Discord</a> | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
