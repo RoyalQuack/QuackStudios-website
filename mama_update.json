@@ -1,5 +1,5 @@
 {
-  "homepage": "https://quackstudios.dev/",
+  "homepage": "https://modrinth.com/mod/morearmor/",
   "promos": {
     "1.21.4-latest": "1.2",
     "1.21.4-recommended": "1.2"
@@ -7,7 +7,7 @@
   "1.2": {
     "mcversion": "1.21.4",
     "version": "1.2",
-    "updateUrl": "https://your-website.com/modupdates/more_and_more_armor4.json",
+    "updateUrl": "https://modrinth.com/mod/morearmor",
     "changes": [
       "Added update tracker",
       "Added Glass Armor",
