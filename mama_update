@@ -1,0 +1,35 @@
+{
+  "homepage": "https://your-website.com",
+  "promos": {
+    "1.21.4-latest": "1.2",
+    "1.21.4-recommended": "1.2"
+  },
+  "1.2": {
+    "mcversion": "1.21.4",
+    "version": "1.2",
+    "updateUrl": "https://your-website.com/modupdates/more_and_more_armor4.json",
+    "changes": [
+      "Added update tracker",
+      "Added Glass Armor",
+      "Added Magma Cream Chestplate",
+      "Added Ice Boots",
+      "Added Mossy Chestplate and leggings"
+    ]
+  },
+  "1.1": {
+    "mcversion": "1.21.4",
+    "version": "1.1",
+    "deprecated": true,
+    "changes": [
+      "Marked as outdated."
+    ]
+  },
+  "1.0": {
+    "mcversion": "1.21.4",
+    "version": "1.0",
+    "deprecated": true,
+    "changes": [
+      "Marked as outdated."
+    ]
+  }
+}
