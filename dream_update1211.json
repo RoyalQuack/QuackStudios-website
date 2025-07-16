@@ -1,0 +1,15 @@
+{
+  "homepage": "https://modrinth.com/project/the-dream-realms",
+  "promos": {
+    "1.21.1-latest": "1.0",
+    "1.21.1-recommended": "1.0"
+  },
+  "1.0": {
+    "mcversion": "1.21.1",
+    "version": "1.0",
+    "updateUrl": "https://modrinth.com/project/the-dream-realms",
+    "changes": [
+      "Release"
+    ]
+  }
+}
